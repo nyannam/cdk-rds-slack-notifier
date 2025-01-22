@@ -19,6 +19,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        working-directory: ./cdk-rds-slack
 
       - name: Bootstrap CDK
         run: npx cdk bootstrap aws://$AWS_ACCOUNT_ID/$AWS_REGION
